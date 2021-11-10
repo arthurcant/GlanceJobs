@@ -65,13 +65,13 @@ header {
     text-decoration: underline;
     /* transition: all 10s linear; */
 }
-
 .sub-menu {
     display: none;
     position: absolute;
-    right: 357px;
-    top: 50px;
+    right: 354px;
+    top: 45px;
     width: 120px;
+    height: auto;
     list-style-type: none;
     background-color: #000;
     z-index: 1;
@@ -83,7 +83,11 @@ header {
     border: 0.1rem solid white;
 }
 
-#sub-itens:hover .sub-menu{
+.sub-menu li a{
+    color: #fff;
+}
+
+.sub-itens:hover .sub-menu, .sub-itens{
     display: block;
 }
 
