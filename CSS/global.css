@@ -9,14 +9,12 @@
 }
 
 html {
-
-
-
     font-size: 62.5%;
 }
 
 body{
     min-height: 100vh;
+    background-color: #343837;
 }
 
 header {
@@ -53,7 +51,7 @@ header {
     list-style-type: none;
 }
 
-#menuNormal  li {
+#menuNormal li:not(.sub-menu li) {
     padding: .5rem;
     font-size: 2rem;
     color: white;
@@ -67,6 +65,35 @@ header {
     text-decoration: underline;
     /* transition: all 10s linear; */
 }
+
+.sub-menu {
+    display: none;
+    position: absolute;
+    right: 357px;
+    top: 50px;
+    width: 120px;
+    list-style-type: none;
+    background-color: #000;
+    z-index: 1;
+}
+
+.sub-menu li {
+    padding: .2rem;
+    font-size: 1.6rem;
+    border: 0.1rem solid white;
+}
+
+#sub-itens:hover .sub-menu{
+    display: block;
+}
+
+.sub-menu:hover {
+    display: block;
+}
+
+
+
+
 
 
 
