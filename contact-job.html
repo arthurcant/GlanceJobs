@@ -1,5 +1,5 @@
-<!DOCTYPE html>
 <html lang="pt-BR">
+<!DOCTYPE html>
 
 <head>
     <meta charset="UTF-8">
@@ -14,10 +14,15 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
 
+    <!-- Icon -->
+    <link rel="shortcut icon" href="images/apple-touch-icon.png" type="image/x-icon">
+
     <!-- Folha CSS -->
     <link rel="stylesheet" href="CSS/global.css">
     <link rel="stylesheet" href="CSS/contact-jobs.css">
     <title>Document</title>
+
+    <style></style>
 </head>
 
 <body>
@@ -57,44 +62,175 @@
         </div>
     </header>
 
-    <div class="detail">Cadastre sua vaga</div>
-    <div id="infor">
-        <form action="" method="post">
+    <div class="detail" id="detailJob">Cadastre sua vaga</div>
+    <div class="infor">
+        <form action="#" method="get" id="formJobs">
+            
             <fieldset>
                 <legend>Detalhes da Empresa</legend>
 
                 <div class="field-position">
-                    <label for="nomeEmpresa">O seu Nome/Nome da Empresa:</label> <br>
+                    <label for="nomeEmpresa"><span>O seu Nome/Nome da Empresa:</span></label> <br><br>
                     <div class="bars-inputs">
                         <input type="text" id="nomeEmpresa">
                     </div>
                 </div>
 
                 <div class="field-position">
-                    <label for="link">Website</label> <br>
+                    <label for="link"><span>Website</span></label> <br><br>
                     <div class="bars-inputs">
-                        <input type="text" id="link" value="http://">
+                        <input type="text" id="link">
                     </div>
                 </div>
 
-                <div>
-                    Logo (.jpg, .gif ou .png) <input type="file" id="upload-file">
+                <div id="upload-file">
+                    <span>Logo (.jpg, .gif ou .png)</span> <input type="file">
+                </div>
+            </fieldset>
+
+            <fieldset>
+                <legend>Detalhe da vaga</legend>
+
+                <div class="field-position">
+                    <label for="nomeEmpresa"><span>Título da vaga *</span></label> <br><br>
+
+                    <div class="bars-inputs">
+                        <input type="text" name="nomeVaga" id="nomeVaga">
+                    </div>
+                    <div class="erro-message"> Campo obrigatório.</div>
+                </div>
+
+                <div class="field-position">
+                    <label for="tipoVaga"><span>Tipo *</span></label> <br> <br>
+                    <select name="tipoVaga" id="tipoVaga">
+                        <option value="Selecione um tipo">Selecione um tipo</option>
+                        <option value="Agência do Trabalho">Agência do Trabalho</option>
+                        <option value="Concursos">Concursos</option>
+                        <option value="Cursos ">Cursos </option>
+                        <option value="Estágio ">Estágio </option>
+                        <option value="Freelance ">Freelance </option>
+                        <option value="Jovem aprendiz ">Jovem aprendiz </option>
+                        <option value="Meio Período ">Meio Período </option>
+                        <option value="PCD (Pessoa com Deficiência) ">PCD (Pessoa com Deficiência) </option>
+                        <option value="PJ (Pessoa Jurídica) ">PJ (Pessoa Jurídica) </option>
+                        <option value="Plantonista (Plantão) ">Plantonista (Plantão) </option>
+                        <option value="Tempo Integral">Tempo Integral</option>
+                    </select>
+                    <div class="erro-message"> Campo obrigatório.</div>
+                </div>
+
+                <div class="field-position">
+                    <label for="categoriaVaga"><span>Categoria da Vaga *</span></label> <br><br>
+                    <select name="categoriaVaga" id="categoriaVaga">
+                        <option value="Selecione um tipo">Selecione um tipo</option>
+                        <option value="Informática/T.I.">Informática/T.I.</option>
+                        <option value="Engenharia - Outras">Engenharia - Outras</option>
+                        <option value="Administração Comercial/Vendas">Administração Comercial/Vendas</option>
+                        <option value="Vendas">Vendas</option>
+                        <option value="Administração de Empresas">Administração de Empresas</option>
+                        <option value="Vendas - Varejo">Vendas - Varejo</option>
+                        <option value="Atend. a cliente">Atend. a cliente</option>
+                        <option value="Telecomunicações">Telecomunicações</option>
+                        <option value="Internet">Internet</option>
+                        <option value="Atend. a cliente - Telemarketing/Call Center">Atend. a cliente - Telemarketing/Call Center</option>
+                        <option value="Engenharia de Produção">Engenharia de Produção</option>
+                        <option value="Marketing">Marketing</option>
+                        <option value="Matemática/Estatística">Matemática/Estatística</option>
+                        <option value="Serviços Técnicos - Outros">Serviços Técnicos - Outros</option>
+                        <option value="Economia">Economia</option>
+                        <option value="Engenharia Eletrônica">Engenharia Eletrônica</option>
+                        <option value="Contabilidade">Contabilidade</option>
+                        <option value="Comunicação">Comunicação</option>
+                        <option value="Finanças">Finanças</option>
+                        <option value="Vendas Técnicas">Vendas Técnicas</option>
+                        <option value="Engenharia Eletrotécnica">Engenharia Eletrotécnica</option>
+                        <option value="Engenharia Mecânica">Engenharia Mecânica</option>
+                        <option value="Recursos Humanos">Recursos Humanos</option>
+                        <option value="Logística">Logística</option>
+                        <option value="Química">Química</option>
+                        <option value="Bancos">Bancos</option>
+                        <option value="Gestão Empresarial">Gestão Empresarial</option>
+                        <option value="Engenharia Química">Engenharia Química</option>
+                        <option value="Propaganda">Propaganda</option>
+                        <option value="Engenharia Civil">Engenharia Civil</option>
+                        <option value="Serviços Técnicos - Eletrônicos">Serviços Técnicos - Eletrônicos</option>
+                        <option value="Serviços Administrativos">Serviços Administrativos</option>
+                        <option value="Produção/Fabricação">Produção/Fabricação</option>
+                        <option value="Serviços Técnicos - Elétricos">Serviços Técnicos - Elétricos</option>
+                        <option value="Ensino - Outros">Ensino - Outros</option>
+                        <option value="Farmácia">Farmácia</option>
+                        <option value="Qualidade">Qualidade</option>
+                        <option value="Auditoria">Auditoria</option>
+                        <option value="Psicologia">Psicologia</option>
+                        <option value="Manutenção Industrial">Manutenção Industrial</option>
+                        <option value="Agronomia">Agronomia</option>
+                        <option value="Ensino Superior e Pesquisa">Ensino Superior e Pesquisa</option>
+                        <option value="Seguros">Seguros</option>
+                        <option value="Biologia/Ciências Biológicas">Biologia/Ciências Biológicas</option>
+                        <option value="Advocacia/Jurídica">Advocacia/Jurídica</option>
+                        <option value="Física">Física</option>
+                        <option value="Medicina/Hospitalar">Medicina/Hospitalar</option>
+                        <option value="Serviços Técnicos - Mecânicos">Serviços Técnicos - Mecânicos</option>
+                        <option value="Controladoria">Controladoria</option>
+                        <option value="Ecologia/Meio Ambiente">Ecologia/Meio Ambiente</option>
+                    </select>
+                    <div class="erro-message"> Campo obrigatório.</div>
 
                 </div>
 
+                <div class="field-position">
+                    <label for="salario"><span>Salário</span></label> <br><br>
+                    <select name="salario" id="salario">
+                        <option value="" selected>Selecione um tipo</option>
+                        <option value="A Combinar">A Combinar</option>
+                        <option value="Abaixo de R$ 1.000">Abaixo de R$ 1.000</option>
+                        <option value="Enviar Pretensão salarial">Enviar Pretensão salarial</option>
+                        <option value="R$1.000,00 a R$2.000,00">R$1.000,00 a R$2.000,00</option>
+                        <option value="R$2.000,00 – R$4.000,00">R$2.000,00 – R$4.000,00</option>
+                        <option value="R$4.000,00 – R$6.000,00">R$4.000,00 – R$6.000,00</option>
+                        <option value="R$6.000,00 – R$8.000,00">R$6.000,00 – R$8.000,00</option>
+                        <option value="R$8.000,00 – R$10.000,00">R$8.000,00 – R$10.000,00</option>
+                    </select>
+                    <div class="erro-message"> Campo obrigatório.</div>
+                </div>
+
+                <div id="hidden" class="field-position">
+                    <label for="pretensaoSalarial"><span>Enviar Pretensão salarial *</span></label> <br><br>
+
+                    <div class="bars-inputs">
+                        <input type="text" id="pretensaoSalarial">
+                    </div>
+                </div>
+
+                <div class="field-position">
+                    <label for="localizacaoVaga"><span>Localização da Vaga</span>
+                        <br><br> <span class="subTitlesField">Informe a cidade da vaga, deixe em branco se a vaga for por exemplo
+                            remoto.</span> </label> <br><br>
+                    <div class="bars-inputs">
+                        <input type="text" name="localizacaoVaga" id="localizacaoVaga" value="">
+                    </div>
+
+                </div>
+                <div class="field-position">
+                    <label for="descricaoVaga"><span>Descrição da Vaga *</span>
+                        <br><br> <span class="subTitlesField">Informe a descrição da vaga para os candidatos com topicos exemplos: principais atividades, requesitos, jornada de trabalho dentre outros.</span> </label> <br><br>
+
+                    <textarea name="descricaoVaga" id="descricaoVaga" class="descricaoVaga02"  rows="20" style="resize: vertical;"></textarea>
+                </div>
+
+                <div class="field-position">
+                    <label for="descricaoVaga"><span>Como Enviar o Currículo *</span>
+                        <br><br> <span class="subTitlesField">Explique aos candidatos como podem se candidatar a vaga.</span> </label> <br><br>
+                    <textarea name="descricaoVaga" id="descricaoVaga" class="descricaoVaga02" cols="30" rows="20"></textarea>
+                </div>
             </fieldset>
 
+            <input type="submit" class="send" onclick="main()" value="Enviar">
 
         </form>
     </div>
 
-
-
-
-
-
-
+    <script src="JavaScript/formolarioVagas.js"></script>
 
 </body>
-
 </html>
