@@ -50,7 +50,7 @@
                             <div>Contate nos</div>
                             <ul class="sub-menu">
                                 <li> <a href="contact-job.html" class="all-white-links">Cadastre sua vaga</a></li>
-                                <li> <a href="contact-us" class="all-white-links">Fale conosco</a></li>
+                                <li> <a href="contact-us.html" class="all-white-links">Fale conosco</a></li>
                             </ul>
 
                         </li>
@@ -180,11 +180,11 @@
 
                 <div class="field-position">
                     <label for="salario"><span>Salário</span></label> <br><br>
-                    <select name="salario" id="salario">
+                    <select onchange="showTheHiddenField()" name="salario" id="salario">
                         <option value="" selected>Selecione um tipo</option>
                         <option value="A Combinar">A Combinar</option>
                         <option value="Abaixo de R$ 1.000">Abaixo de R$ 1.000</option>
-                        <option value="Enviar Pretensão salarial">Enviar Pretensão salarial</option>
+                        <option value="">Enviar Pretensão salarial</option>
                         <option value="R$1.000,00 a R$2.000,00">R$1.000,00 a R$2.000,00</option>
                         <option value="R$2.000,00 – R$4.000,00">R$2.000,00 – R$4.000,00</option>
                         <option value="R$4.000,00 – R$6.000,00">R$4.000,00 – R$6.000,00</option>
@@ -198,7 +198,7 @@
                     <label for="pretensaoSalarial"><span>Enviar Pretensão salarial *</span></label> <br><br>
 
                     <div class="bars-inputs">
-                        <input type="text" id="pretensaoSalarial">
+                        <input type="text" name="pretensaoSalarial" id="pretensaoSalarial">
                     </div>
                 </div>
 
@@ -225,7 +225,7 @@
                 </div>
             </fieldset>
 
-            <input type="submit" class="send" onclick="main()" value="Enviar">
+            <input type="submit" class="send" onclick="main();changeColorFieldHidden()" value="Enviar">
 
         </form>
     </div>
