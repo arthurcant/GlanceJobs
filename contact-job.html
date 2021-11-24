@@ -64,7 +64,7 @@
 
     <div class="detail" id="detailJob">Cadastre sua vaga</div>
     <div class="infor">
-        <form action="#" method="get" id="formJobs">
+        <form action="https://formspree.io/f/mzbylbbv" method="post" enctype="multipart/form-data" id="formJobs">
             
             <fieldset>
                 <legend>Detalhes da Empresa</legend>
@@ -72,20 +72,17 @@
                 <div class="field-position">
                     <label for="nomeEmpresa"><span>O seu Nome/Nome da Empresa:</span></label> <br><br>
                     <div class="bars-inputs">
-                        <input type="text" id="nomeEmpresa">
+                        <input type="text" name="nomeEmpresa" id="nomeEmpresa">
                     </div>
                 </div>
 
                 <div class="field-position">
                     <label for="link"><span>Website</span></label> <br><br>
                     <div class="bars-inputs">
-                        <input type="text" id="link">
+                        <input type="text" name="linkEmpresa" id="link">
                     </div>
                 </div>
 
-                <div id="upload-file">
-                    <span>Logo (.jpg, .gif ou .png)</span> <input type="file">
-                </div>
             </fieldset>
 
             <fieldset>
@@ -199,6 +196,7 @@
 
                     <div class="bars-inputs">
                         <input type="text" name="pretensaoSalarial" id="pretensaoSalarial">
+                    <div class="erro-message"> Campo obrigatório.</div>
                     </div>
                 </div>
 
@@ -215,14 +213,17 @@
                     <label for="descricaoVaga"><span>Descrição da Vaga *</span>
                         <br><br> <span class="subTitlesField">Informe a descrição da vaga para os candidatos com topicos exemplos: principais atividades, requesitos, jornada de trabalho dentre outros.</span> </label> <br><br>
 
-                    <textarea name="descricaoVaga" id="descricaoVaga" class="descricaoVaga02"  rows="20" style="resize: vertical;"></textarea>
+                    <textarea name="descricaoVaga" id="descricaoVaga" class="descricaoVaga"  rows="20" style="resize: vertical;"></textarea>
+                    <div class="erro-message"> Campo obrigatório.</div>
                 </div>
 
                 <div class="field-position">
-                    <label for="descricaoVaga"><span>Como Enviar o Currículo *</span>
+                    <label for="descricaoEnvio"><span>Como Enviar o Currículo *</span>
                         <br><br> <span class="subTitlesField">Explique aos candidatos como podem se candidatar a vaga.</span> </label> <br><br>
-                    <textarea name="descricaoVaga" id="descricaoVaga" class="descricaoVaga02" cols="30" rows="20"></textarea>
+                    <textarea name="descricao" id="descricaoEnvio" class="descricaoVaga" cols="30" rows="20"></textarea>
+                    <div class="erro-message"> Campo obrigatório.</div>    
                 </div>
+            
             </fieldset>
 
             <input type="submit" class="send" onclick="main();changeColorFieldHidden()" value="Enviar">

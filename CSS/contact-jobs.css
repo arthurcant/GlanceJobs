@@ -50,10 +50,16 @@ label {
     padding-bottom: 1rem;
 }
 
-input:not(input[type=file]) {
+input:not(input[type=submit]) {
     background-color:#f0f0f0;
     outline: none;
     margin-left: 1rem;
+    width: 28rem;
+}
+
+#localizacaoVaga {
+    background-color:#f0f0f0;
+
 }
 
 #upload-file {
@@ -85,9 +91,13 @@ select {
     width: 40rem;
 }
 
-#descricaoVaga {
+.descricaoVaga {
     border: .1rem solid gray;
 }
+.descricaoVagaErro {
+    border: .5rem solid rgba(255, 0, 0, .3);
+}
+
 
 #detailJob {
     font-size: 1.5rem;    
@@ -119,7 +129,8 @@ select {
 
 textarea{
     resize: vertical;
-    width: 766px 
+    width: 766px;
+    padding: 1rem;
 }
 
 

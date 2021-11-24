@@ -19,6 +19,8 @@
 
     <!-- Folha CSS -->
     <link rel="stylesheet" href="CSS/global.css">
+    <!-- <link rel="stylesheet" href="CSS/contact-jobs.css"> -->
+    <link rel="stylesheet" href="CSS/contact-us.css">
     <title>Document</title>
 </head>
 
@@ -61,10 +63,43 @@
 
     <div class="detail">Fale conosco</div>
     <div class="infor">
+        <form action="https://formspree.io/f/mzbylbbv" method="post" id="formJobsContact">
+
+            <fieldset>
+                <legend>Contate-nos</legend>
+
+                <div class="field-position">
+                    <label for="nomeEmpresa"><span>O seu nome</span></label> <br><br>
+                    <div class="bars-inputs">
+                        <input name="nomePessoa" type="text" id="nomePessoa" >
+                    </div>
+                    <div class="message">Campo vazio</div>
+                </div>
+
+                <div class="field-position">
+                    <label for="email"><span>Email</span></label> <br><br>
+
+                    <div class="bars-inputs">
+                        <input type="text" name="email" id="email">
+                    </div>
+                    <div class="message">Campo vazio</div>
+                </div>
+
+                <div class="field-position">
+                    <label for="mensagem"><span>Mesagem</span></label> <br><br>
+                    <textarea name="mensagem" id="mensagem" cols="30" rows="10"></textarea>
+                    <div class="message">Campo vazio</div>
+                </div>
+
+            </fieldset>
+            <input type="submit" class="send" onclick="main()" value="Enviar">
+
+        </form>
+
 
     </div>
 
-
+    <script src="JavaScript/formolarioContato.js"></script>
 </body>
 
 </html>
