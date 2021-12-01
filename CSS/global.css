@@ -141,15 +141,122 @@ header {
     font-size: 1.6rem;
 }
 
+.blocos {
+    position: absolute;
+    border: .1rem solid black;
+    background-color: #fff;
+    left: 8rem;
+    top: 13rem;
+}
+
+.types {
+    display: flex;
+    flex-direction: column;
+}
 
 
 
+#inforFlex {
+    display: flex;
+    flex-direction: row;
+}
 
+#area-posts .posters:nth-child(1) {
+    border-top: none;
+}
 
+.posters {
+    display: flex;
+    flex-direction: column;
 
+    padding: 1rem;
 
+    border-bottom: 2px solid rgba(0, 0, 0, 0.4);
+}
 
+.posters h2 {
+    padding-bottom: 1rem;
 
+    font-size: 16px;
+    color: blue;
 
+}
 
+.date {
+
+    color: rgba(0, 0, 0, .5);
+    padding-top: 1rem;
+    align-self: flex-end;
+}
+
+#categories {
+    margin-left: 1rem;
+    margin-top: 1rem;
+}
+
+#sub-menu {
+    border: 1px solid black;
+    width: 17.2rem;
+}
+
+.click-subMenu {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+    padding: 0.6rem;
+    font-size: 1.6rem;
+    border-bottom: 1px solid black;
+}
+
+.tema {
+    text-decoration: underline;
+}
+
+.seta {
+    text-decoration: none;
+}
+
+.click-subMenu:hover {
+    cursor: pointer;
+    background-color: rgba(0, 0, 0, .5);
+}
+
+.drop-menu {
+    padding: 0rem;
+    height: 0rem;
+    
+    overflow-x: hidden;
+    overflow-y: hidden;
+    
+    transition: all ease 1s;
+    background-color: rgba(0, 0, 0, .5);
+
+}
+
+.scroll {
+    overflow: scroll;
+}
+
+.drop-menu li {
+    list-style-type: none;
+
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    
+    padding: 1rem;
+    background-color: #fff;
+}
+
+.drop-menu li a {
+    color: blue;
+}
+
+#list {
+    list-style-type: none;
+}
+
+.second-text {
+    color: #000;
+}
 
