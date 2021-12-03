@@ -10,6 +10,20 @@ function dropDown(index){
 
 }
 
+function getNameLink(link) {
+    let title = document.querySelector('#last');
+
+    text = link.innerText 
+
+    title.innerText = title
+
+
+}
+
+function start(x) {
+    setTimeout(getNameLink(x), 1000);
+
+}
 
 
 

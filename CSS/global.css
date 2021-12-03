@@ -161,6 +161,10 @@ header {
     flex-direction: row;
 }
 
+#area-posts {
+    flex: 3;
+}
+
 #area-posts .posters:nth-child(1) {
     border-top: none;
 }
@@ -190,7 +194,9 @@ header {
 }
 
 #categories {
+    flex: 0;
     margin-left: 1rem;
+    margin-right: 1rem;
     margin-top: 1rem;
 }
 
