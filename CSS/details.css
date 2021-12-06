@@ -6,16 +6,16 @@
     flex-direction: column;
 
     width: 69vw;
+    min-height: 50rem;
     background-color: #fff;
-
 }
 
 #details {
-    min-height: 50rem;
-
+    min-height: 57rem;
+   
     padding-left: 6rem;
     padding-top: 2rem;
-
+   
     margin-bottom: 10rem;
 }
 
@@ -25,7 +25,7 @@
 }
 
 .space {
-    margin-top: 2rem;
+    margin-top: 0rem;
 }
 
 p {
@@ -40,6 +40,7 @@ p {
 
 h2{
     font-size: 1.6rem;
+    margin-bottom: 2rem;
 }
 
 .list {
@@ -54,36 +55,53 @@ ul.list  li{
     font-size: 1.5rem;
 }
 
-#line2 {
-    border-bottom: .4rem solid black;
+#boxSendArea {
+    margin-top: 5rem;
+    width: 100rem;
+    height: 4rem;
 }
 
-#line2 {
-    
+#listSend {
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+#boxMessage {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: .4rem solid #000;
+    width: 19rem;
+    height: 3rem;
+    font-weight: 600;
+    font-size: 1.2rem;
+    border-bottom: transparent;
+}
+
+#line01 {
+    align-self: flex-end;
+    width: 10rem;
+    height: .4rem;
+    margin-left: -6rem;
+    background-color: black;
+}
+#line02 {
+    align-self: flex-end;
+    width: 65.3rem;
+    height: .4rem;
+    background-color: black;
+}
+
+#detail-jobs {
+    margin-top: 2rem;
     margin-left: -6rem;
 }
 
-#box-send {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: 5rem;
-    
-    border: .4rem solid red;
-    border-bottom: .4rem solid #fff ;
-
-
-    width: 15rem;
-    height: 4rem;
-
-    font-size: 1.2rem;
-    background-color: #fff;
-    z-index: 9;
+#email {
+    color: blue;
 }
-
-
-
-
 
 
 

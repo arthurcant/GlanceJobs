@@ -262,3 +262,10 @@ header {
     color: #000;
 }
 
+#normal {
+    display: block;
+}
+
+.link-underline:hover {
+    text-decoration: underline;
+}
