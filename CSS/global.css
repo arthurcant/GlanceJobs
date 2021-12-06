@@ -111,6 +111,7 @@ header {
     width: 14rem;
     height: 4rem;
     
+    padding: .5rem;
     margin-left: -69rem;
     margin-top: 2rem;
     font-size: 1.6rem;
@@ -122,7 +123,9 @@ header {
 
 
 .infor {
-    /* margin-top: 1rem;     */
+    display: flex;
+    flex-direction: row;
+
     width: 69vw;
     min-height: 90vh;
     background-color: #fff;
@@ -152,13 +155,6 @@ header {
 .types {
     display: flex;
     flex-direction: column;
-}
-
-
-
-#inforFlex {
-    display: flex;
-    flex-direction: row;
 }
 
 #area-posts {
