@@ -94,6 +94,42 @@ ul.list  li{
     background-color: black;
 }
 
+.detail {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    width: 14rem;
+    height: 4rem;
+    
+    padding: .5rem;
+    margin-left: -69rem;
+    margin-top: 2rem;
+    font-size: 1.6rem;
+    
+    border: .3rem solid black;
+    border-bottom: .1rem solid rgba(156, 107, 107, .1);
+    background-color: #fff;
+}
+/* 
+.detail {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    width: 14rem;
+    height: 4rem;
+    
+    padding: .5rem;
+    margin-left: -69rem;
+    margin-top: 2rem;
+    font-size: 1.6rem;
+    
+    border: .3rem solid black;
+    border-bottom: .1rem solid rgba(156, 107, 107, .1);
+    background-color: #fff;
+} */
+
 #detail-jobs {
     margin-top: 2rem;
     margin-left: -6rem;
